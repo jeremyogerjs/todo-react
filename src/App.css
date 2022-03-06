@@ -1,5 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  background-color: #282c34;
+  color: white;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -14,20 +23,63 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+.card {
+  background-color: #fff;
+  color: black;
+  width: 25em;
+  display: flex;
+  padding: 3em;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.card form {
+  display: flex;
+  align-items: center;
+}
+
+.card form label {
+  text-align: left;
+}
+
+.card-btn {
+  background-color: green;
+
+}
+
+.todoList {
+  width: 25em;
+  margin: 3em auto;
+}
+
+.todoList ul {
+  list-style: none;
+
+}
+.todoItem {
+  background-color: #fff;
+  color: black;
+  text-align: left;
+  padding: .5em 1em;
+}
+
+.deleteItem {
+  color: red;
+  font-weight: bold;
+  text-align: right;
+  cursor: pointer;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
